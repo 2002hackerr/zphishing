@@ -3,7 +3,7 @@
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	MINATO_MUKESH
 ##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/htr-tech/zphisher
+##   Github 	: 	https://github.com/2002hackerr/zphishing.git
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
@@ -214,6 +214,7 @@ banner() {
 		${ORANGE}      |_|                ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by minato_mukesh (pathlavath mukesh)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Contact Mail = i.hacked.you.anonymous@gmail.com${WHITE}
 	EOF
 }
 
