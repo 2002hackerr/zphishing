@@ -76,7 +76,7 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  (https://github.com/2002hackerr)
+##      Copyright (C) 2022   (https://github.com/2002hackerr)
 ##
 
 
