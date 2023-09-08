@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# https://github.com/2002hackerr/zphisher
+# https://github.com/2002hackerr/zphishing
 
 if [[ $(uname -o) == *'Android'* ]];then
 	ZPHISHER_ROOT="/data/data/com.termux/files/usr/opt/zphisher"
