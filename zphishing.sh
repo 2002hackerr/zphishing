@@ -76,18 +76,10 @@
 ##    The precise terms and conditions for copying, distribution and
 ##    modification follow.
 ##
-##      Copyright (C) 2022  HTR-TECH (https://github.com/htr-tech)
+##      Copyright (C) 2022  (https://github.com/2002hackerr)
 ##
 
-##   THANKS TO :
-##   1RaY-1 - https://github.com/1RaY-1
-##   Aditya Shakya - https://github.com/adi1090x
-##   Ali Milani Amin - https://github.com/AliMilani
-##   Ignitetch  - https://github.com/Ignitetch/AdvPhishing
-##   Moises Tapia - https://github.com/MoisesTapia
-##   Mr.Derek - https://github.com/E343IO
-##   Mustakim Ahmed - https://github.com/bdhackers009
-##   TheLinuxChoice - https://twitter.com/linux_choice
+
 
 
 __version__="2.3.5"
@@ -164,9 +156,9 @@ kill_pid() {
 # Check for a newer release
 check_update(){
 	echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Checking for update : "
-	relase_url='https://api.github.com/repos/htr-tech/zphisher/releases/latest'
+	relase_url='https://github.com/2002hackerr/releases/latest'
 	new_version=$(curl -s "${relase_url}" | grep '"tag_name":' | awk -F\" '{print $4}')
-	tarball_url="https://github.com/htr-tech/zphisher/archive/refs/tags/${new_version}.tar.gz"
+	tarball_url="https://github.com/2002hackerr/archive/refs/tags/${new_version}.tar.gz"
 
 	if [[ $new_version != $__version__ ]]; then
 		echo -ne "${ORANGE}update found\n"${WHITE}
@@ -182,7 +174,7 @@ check_update(){
 			rm -f .zphisher.tar.gz
 			popd > /dev/null 2>&1
 			{ sleep 3; clear; banner_small; }
-			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run zphisher again\n\n"${WHITE}
+			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run zphishing again\n\n"${WHITE}
 			{ reset_color ; exit 1; }
 		else
 			echo -e "\n${RED}[${WHITE}!${RED}]${RED} Error occured while downloading."
