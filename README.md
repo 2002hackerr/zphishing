@@ -1,148 +1,71 @@
-<!-- Zphisher -->
+<h1 align="center">zPhishing Framework 🎣</h1>
 
 <p align="center">
-  <img src=".github/misc/logo.png">
+  <img src="https://img.shields.io/badge/Version-3.0.0-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/github/license/2002hackerr/zphishing?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/stars/2002hackerr/zphishing?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/issues/2002hackerr/zphishing?color=red&style=for-the-badge" alt="Issues">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
+  <b>An Advanced, Automated Social Engineering Framework for Enterprise Security Teams & Penetration Testers.</b>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Author-htr--tech-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
-  <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-  <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhtr-tech%2Fzphisher&title=Visitors&edge_flat=false"/></a>
-</p>
+---
 
-<p align="center"><b>A beginners friendly, Automated phishing tool with 30+ templates.</b></p>
+## 🛑 Important Disclaimer & Ethical Boundaries
 
-##
+**zPhishing is built strictly for educational purposes, security awareness training, and authorized Red Team penetration testing.**
 
-<h3><p align="center">Disclaimer</p></h3>
+Any actions or activities related to zPhishing are solely your responsibility. The misuse of this toolkit to gain unauthorized access to credentials or systems is illegal. The contributors and maintainers will not be held responsible for any criminal charges brought against individuals who misuse this framework. **By downloading and using this software, you agree to use it exclusively within the bounds of the law and on systems where you have explicit, documented permission.**
 
-<i>Any actions and or activities related to <b>Zphishing</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The contributors will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
+---
 
-<b>This toolkit contains materials that can be potentially damaging or dangerous for social media</b>. Refer to the laws in your province/country before accessing, using,or in any other way utilizing this in a wrong way.
+## 📖 Overview
 
-<b>This Tool is made for educational purposes only</b>. Do not attempt to violate the law with anything contained here. <b>If this is your intention, then Get the hell out of here</b>!
+As social engineering remains the primary vector for enterprise breaches, training employees to identify modern phishing attacks is critical. **zPhishing** provides security teams with an automated framework to generate highly realistic, containerized phishing simulations to test organizational human defenses.
 
-It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
+### Key Features
+- **30+ Modern Templates**: Accurately simulates login pages for major enterprise and consumer platforms.
+- **Automated Tunneling**: Built-in support for Cloudflared, LocalXpose, and Localhost routing.
+- **Dockerized Environments**: Run completely isolated and ephemeral campaigns using the included `Dockerfile`.
+- **Masked URL Generation**: Automatically obfuscates URLs to train employees on spotting malicious domains.
+- **Cross-Platform Compatibility**: Fully tested on Ubuntu, Debian, Arch, Fedora, and Termux.
 
-##
+---
 
-### Features
+## 🚀 Quick Start & Installation
 
-- Latest and updated login pages.
-- Beginners friendly
-- Multiple tunneling options
-  - Localhost
-  - Cloudflared
-  - LocalXpose
-- Mask URL support 
-- Docker support
-
-##
-
-### Installation
-
-- Just, Clone this repository -
-  ```
-  git clone --depth=1 https://github.com/2002hackerr/zphishing.git
-  ```
-
-- Now go to cloned directory and run `zphishing.sh` -
-  ```
-  $ cd zphishing
-  $ bash zphishing.sh
-  ```
-
-- On first launch, It'll install the dependencies and that's it. ***Zphishing*** is installed.
-
-##
-
-### Installation (Termux)
-You can easily install zphisher in Termux by using tur-repo
+### Option 1: Native Installation
+Ensure you have `git`, `curl`, and `php` installed on your system.
+```bash
+git clone --depth=1 https://github.com/2002hackerr/zphishing.git
+cd zphishing
+bash zphishing.sh
 ```
-$ pkg install tur-repo
-$ pkg install zphishing
-$ zphishing
+*Note: On first launch, the framework will automatically resolve and install any missing dependencies.*
+
+### Option 2: Docker Installation (Recommended)
+For enterprise environments, running zPhishing via Docker ensures zero contamination of the host OS.
+```bash
+git clone https://github.com/2002hackerr/zphishing.git
+cd zphishing
+bash run-docker.sh
 ```
-### A Note : 
-***Termux discourages hacking*** .. So never discuss anything related to *zphisher* in any of the termux discussion groups. For more check : [wiki](https://wiki.termux.com/wiki/Hacking)
 
-##
+---
 
-<p align="left">
-  <a href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/2002hackerr/zphishing&tutorial=README.md" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg"></a>
-</p>
+## 🤝 Contributing
 
-##
+We welcome contributions from security researchers and developers! If you would like to add new templates, optimize the tunneling logic, or patch bugs, please refer to our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
 
-### Installation via ".deb" file
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/NewTemplate`)
+3. Commit your changes (`git commit -m 'Add highly realistic SSO template'`)
+4. Push to the branch (`git push origin feature/NewTemplate`)
+5. Open a Pull Request
 
-- Download `.deb` files from the [**Latest Release**](https://github.com/2002hackerr/releases/latest)
-- If you are using ***termux*** then download the `*_termux.deb`
-
-- Install the `.deb` file by executing
-  ```
-  apt install <your path to deb file>
-  ```
-  Or
-  ```
-  $ dpkg -i <your path to deb file>
-  $ apt install -f
-  ```
-
-##
-
-
-
-
-<details>
-  <summary><h3>Dependencies</h3></summary>
-
-<b>Zphisher</b> requires following programs to run properly - 
-- `git`
-- `curl`
-- `php`
-
-> All the dependencies will be installed automatically when you run **Zphishing** for the first time.
-</details>
-
-<details>
-  <summary><h3>Tested on</h3></summary>
-
-- **Ubuntu**
-- **Debian**
-- **Arch**
-- **Manjaro**
-- **Fedora**
-- **Termux**
-</details>
-
-##
-
-<h3 align="center"><i>:: Workflow ::</i></h3>
+---
 <p align="center">
-<img src=".github/misc/workflow.gif"/>
+  <i>Maintained with ❤️ by the Open Source Security Community.</i>
 </p>
-
-##
-
-### Find Me on:
-<p align="left">
-
-  <a href="https://github.com/2002hackerr" target="_blank"><img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=github"></a>
-</p>
-
-
-### *Thanks to all contributors*:
-
-
-<!-- /Hi/ -->
